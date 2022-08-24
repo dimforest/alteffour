@@ -1,6 +1,6 @@
 <#
   .SYNOPSIS
-	Retrieves usage information (storage space used) for all Exchange Online mailboxes, OneDrive, and SharePoint sites in an Office 365 tenant
+  Retrieves usage information (storage space used) for all Exchange Online mailboxes, OneDrive, and SharePoint sites in an Office 365 tenant
 	
 	.DESCRIPTION
 	This script will pull the data specified in the synopsis, and store it in .csv files in a specified location. This could be set to run on a schedule to pull regular data for reporting i.e. depicting this usage data in Power BI or a similar application
