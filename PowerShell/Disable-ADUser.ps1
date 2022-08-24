@@ -18,16 +18,16 @@
 	.PARAMETER DisabledUser
 	Stores the username of the user account to disables.
 	
-	.PARAMETER DisabledGroup
+	.VARIABLE DisabledGroup
 	Stores the name of the security group that the user will be assigned to.
 	
-	.PARAMETER NewPassword
+	.VARIABLE NewPassword
 	Stores the password that the user's account will be reset to.
 	
-	.PARAMETER ADGroup
+	.VARIABLE ADGroup
 	Used in conjunction with the $DisabledGroup parameter to assign the group as the Primary Group for the user.
 	
-	.PARAMETER TargetPath
+	.VARIABLE TargetPath
 	Specifies the path to the OU where the Disabled User will be moved to.
 #>
 
