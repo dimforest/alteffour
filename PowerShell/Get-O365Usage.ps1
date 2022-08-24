@@ -19,11 +19,11 @@
 # Setting Parameters
 	param(
 		[Parameter(Mandatory=$true)][string]$Credential,
-		[Parameter(Mandatory=$true)][string]$LogPath
+		[Parameter(Mandatory=$true)][string]$LogPath,
 	)
 
 #Declaring Variables
-	$AdminSiteURL="URL of your SharePoint Admin Centre"
+	$AdminSiteURL= "URL of your SharePoint Admin Centre"
 	$UMFN = "UserMailboxes.csv"
 	$SMFN = "SharedMailboxes.csv"
 	$ODFN = "OneDriveUsage.csv"
