@@ -10,14 +10,14 @@
 #>
 
 #Declaring Variables
-	$challenge = Read-Host "Are you sure you want to delete Teams Cache (Y/N)?"
-	$challenge = $challenge.ToUpper()
+	choice /c yn /m "Are you sure you want to delete Teams Cache ?"
+	$challenge = $LASTEXITCODE
 
 #Script
-	if ($challenge -eq "N"){
+	if ($challenge -eq 2){
 		Stop-Process -Id $PID
 	}
-	elseif ($challenge -eq "Y"){
+	elseif ($challenge -eq 1){
 		Write-Host "Stopping Teams Process" -ForegroundColor Yellow
 		try{
 			Get-Process -ProcessName Teams | Stop-Process -Force
